@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+    <video src="https://www.pexels.com/download/video/3116500/" loop autoplay muted></video>
+
+    <div class="start-card">
+        <h1> Music Player</h1>
+        <p>Listen to your favorite songs</p>
+
+        <button class="start-btn" onclick="goToPlayer()">Start Playing</button>
+
+        <script>
+            function goToPlayer() {
+                document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = "index.html";
+         }, 400);
+        }
+        </script>
+
+    </div>
+</body>
+</html>
